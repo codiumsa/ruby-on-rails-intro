@@ -1,0 +1,3 @@
+
+puts ENV["MODULO"] # => Productos
+
