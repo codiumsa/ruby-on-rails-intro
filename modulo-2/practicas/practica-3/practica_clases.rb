@@ -16,6 +16,7 @@ class Persona
   end
 end
 
+#Esto es lo que va a hacer el rspec comentar para correr
 dp1 = Persona.new("Juan", "Perez")
 p2 = Persona.new("Juan", "Benitez")
 p3 = Persona.new("Juana", "Perez")
