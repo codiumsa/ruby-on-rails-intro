@@ -1,6 +1,6 @@
 require 'rspec'
 require 'rspec/its'
-require_relative '../practica_clases_solucion.rb'
+require_relative '../practica_clases.rb'
 
 describe "Clases" do
 

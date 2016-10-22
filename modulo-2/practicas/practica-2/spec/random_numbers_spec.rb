@@ -14,9 +14,9 @@ describe "Leccion 2" do
       numbers << number
     }
 
-    it "Se espera que se hayan impreso 6 lineas" do
-      expect(lines.size).to be == 6
-    end
+    #it "Se espera que se hayan impreso 6 lineas" do
+    #  expect(lines.size).to be == 6
+    #end
 
     it "No debe contener ningún número menor a 5000 " do
       numbers.each { |n|
