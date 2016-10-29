@@ -5,13 +5,13 @@ El objetivo principal de la tarea es escribir una clase Ruby y trabajar con atri
 El objetivo funcional de la tarea es leer un archivo de texto y encontrar la o las palabras que mas veces aparecen en cada linea del archivo. 
 La forma en la que vamos a resolver el problema de "las palabras que aparecen mas" es: 
     1. Encontrando la palabra/s con mayor frecuencia en cada linea.
-    2. Encontrando las líneas donde la palabra con mayor cantidad de apariciones es mayor a las cantidades de las demás líneas. 
+    2. Encontrando las líneas del texto que cuentan con las palabras repetidas el máximo número de veces, comparando las frecuencias encontradas entre todas las líneas. 
     
 ### Requermientos Funcionales
 
 1. Escribir una clase llamada AnalizadorLinea que:
     - Almacene la ubicación de una línea de texto en el archivo
-    - analice una línea de texto
+    - Analice una línea de texto
     - Encuentre la palabra que aparece con mayor frecuencia en su línea. 
 
 2. Escribir una clase llamada Solución que:
@@ -37,25 +37,6 @@ La forma en la que vamos a resolver el problema de "las palabras que aparecen ma
 
 3. Ejecuta el comando rspec desde /modulo-2/practicas/practica-5 para ejecutar los tests unitarios incluidos dentro del directorio spec. Esto debería retornar algunas fallas hasta que completes tu solución en practica_5.rb
 
-    ```shell
-    $ rspec
-
-    FFFFFFFFFFFFFFFFF
-
-    Failures:
-
-      1) AnalizadorLinea 
-         Failure/Error: subject { AnalizadorLinea.new("test", 1) }
-         ArgumentError:
-           wrong number of arguments (2 for 0)
-         # ./spec/line_analyzer_spec.rb:6:in `initialize'
-         # ./spec/line_analyzer_spec.rb:6:in `new'
-    ...
-    Finished in 0.04955 seconds (files took 0.10746 seconds to load)
-    17 examples, 17 failures
-    ...
-    ```
-
 ### Requerimientos Técnicos
 
 1. Implementar todas las partes de la tarea en el archivo practica_5.rb. 
@@ -63,7 +44,7 @@ La forma en la que vamos a resolver el problema de "las palabras que aparecen ma
 2. Implementar una clase llamada AnalizadorLinea con ese nombre exactamente.
 
 3. Implementar los siguientes atributos read-only en la clase AnalizadorLinea:
-    * max_frec_count - el numero que representa el máximo número de ocurrencias para una sola palabra. 
+    * max_frec_count - el numero que representa el máximo número de ocurrencias(repeticiones) para una sola palabra. 
     * max_frec_palabras - un array de palabras con el máximo número de ocurrencias (calculado)
     * content          - el string que está siendo analizado(provisto)
     * numero_linea      - la línea del archivo que está siendo analizada(provisto)
@@ -78,18 +59,18 @@ La forma en la que vamos a resolver el problema de "las palabras que aparecen ma
     * Llame al método calcular_frecuencia_palabras().
 
 6. Implementar el método calcular_frecuencia_palabras() para que:
-    * Calcule el máximo número de veces que aparece una palabra en el content provisto y lo almacene en el atributo max_frec_count.
-    * Identifique las palabras que fueron utilizadas el maximo número de veces y lo almacene en el atributo max_frec_palabras.
+    * Calcule el máximo número de veces que aparece una palabra en el content provisto y almacenelo en el atributo max_frec_count.
+    * Identifique las palabras que fueron utilizadas el maximo número de veces y almacenelo en el atributo max_frec_palabras.
 7. Implementar una clase llamada Solution. 
 
 8. Implementar los siguientes atributos de solo lectura en la clase Solution:
     * analizadores - un array que va a contener un AnalizadorLinea por cada línea del archivo de texto de entrada.
-    * max_count_across_lines - un número con el valor de la máxima frecuencia de una palabra.
+    * max_count_across_lines - un número con el valor de la máxima frecuencia entre todos los analizadores.
     * max_count_palabras_across_lines - un array de AnalizadorLineas con las palabras con mayor frecuencia. 
 
 9. Implementar los siguientes métodos en la clase Solution. 
     * initialize() - inicializa el array que va a contener los analizadores por cada linea del archivo.
-    * analyze_file() - procesa el archivo test.txt en un array de AnalizadorLineas. 
+    * analizar_archivo() - procesa el archivo test.txt en un array de AnalizadorLineas. 
     * calcular_linea_mayor_frecuencia() - determina qué lineas del texto tienen el máximo número de ocurrencia de una palabra. 
     * print_palabras_mayor_frecuencia() - imprime la palabra/s con el máximo número de ocurrencias y su correspondiente número de línea. 
 
@@ -108,9 +89,11 @@ La forma en la que vamos a resolver el problema de "las palabras que aparecen ma
     * Imprima el resultado en el siguiente formato:
 
     ```text
-    The following words have the highest word frequency per line: 
-    ["word1"] (aparece en la linea #)
-    ["word2", "word3"] (aparece en la linea #)
+    Las siguientes palabras tienen la máxima frecuencia en el texto, y aparecen en las líneas:
+        [on] (aparece en la línea 2)
+        [a] (aparece en la línea 2)
+        [ruby] (aparece en la línea 3)
+        [rails] (aparece en la línea 4)
     ```
 
 ### Self Grading/Feedback
@@ -124,5 +107,4 @@ Finished in 0.02748 seconds (files took 0.16322 seconds to load)
 ```
 
 ### Submission
-Subir a sus repositorios de github en modulo-2/practicas/practica-5
-los archivos practica_5.rb y solution.rb.
+Subir a sus repositorios de github en modulo-2/practicas/practica-5 los archivos practica_5.rb y solution.rb.
