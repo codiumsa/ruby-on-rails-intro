@@ -31,7 +31,7 @@ describe AnalizadorLinea do
     end
   end
 
-  it "llama a calcular_frecuencia_palabras when created" do
+  it "verifica la existencia calcular_frecuencia_palabras" do
     expect_any_instance_of(AnalizadorLinea).to receive(:calcular_frecuencia_palabras)
     AnalizadorLinea.new("", 1)
   end
