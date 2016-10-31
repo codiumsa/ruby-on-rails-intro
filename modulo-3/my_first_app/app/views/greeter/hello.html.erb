@@ -1,0 +1,10 @@
+<h1>Greetings, <%= @name %></h1>
+<p>La hora es: <%= formatted_time(@time) %></p>
+<p>Esta página se ha mostrado en: 
+  <%= @times_displayed %>  
+  <%= @times_displayed == 1 ? "vez" : "veces"%>
+</p>
+<p> <%= link_to "Google", "http://www.google.com" %></p>
+<p> <%= link_to "Goodbye", greeter_goodbye_path %></p>
+
+  
