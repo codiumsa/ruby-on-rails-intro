@@ -1,0 +1,1141 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 18:00:02 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 20:56:46 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 304ms (Views: 297.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 20:56:47 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 21:07:42 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 21:07:47 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 21:07:48 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 21:09:01 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:17:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/greeter/goodbye"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.4ms)
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:39:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/greeter/goodbye"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:39:39 -0300
+
+NameError (undefined local variable or method `greeter' for #<ActionDispatch::Routing::Mapper:0x005637dd643a00>):
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:40:04 -0300
+
+NameError (undefined local variable or method `greeter' for #<ActionDispatch::Routing::Mapper:0x007f735c7f9be0>):
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+Processing by GreeterController#goodbye as HTML
+  Rendered greeter/goodbye.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:38 -0300
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+Processing by GreeterController#goodbye as HTML
+  Rendered greeter/goodbye.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 21:40:52 -0300
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-30 23:20:27 -0300
+Processing by GreeterController#goodbye as HTML
+  Rendered greeter/goodbye.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:20:28 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:28:58 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:02 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:04 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:36 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:29:40 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:30:16 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/vanessa/git/capacitaciones/ruby-on-rails-intro/modulo-3/my_first_app/app/views/greeter/hello.html.erb:4: syntax error, unexpected keyword_else, expecting ')'
+..." if @times_displayed == 1 else "veces" );@output_buffer.saf...
+...                               ^):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:393:in `_run__712439904705352584__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1321820015793242632__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:30:26 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:30:27 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:30:51 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:13 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:14 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:15 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:16 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:17 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:18 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:31:52 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:31:53 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:32:01 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:32:02 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:02 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:03 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:04 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:05 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:10 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:33:48 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-30 23:54:45 -0300
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-31 00:09:17 -0300
+
+
+Started GET "/greeter/greeter_goodbye_path" for 127.0.0.1 at 2016-10-31 00:09:20 -0300
+
+ActionController::RoutingError (No route matches [GET] "/greeter/greeter_goodbye_path"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.7ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-31 00:15:48 -0300
+
+
+Started GET "/greeter/goodbye" for 127.0.0.1 at 2016-10-31 00:15:50 -0300
+Processing by GreeterController#goodbye as HTML
+  Rendered greeter/goodbye.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-31 20:03:47 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vanessa/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/greeter/hello" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+Processing by GreeterController#hello as HTML
+  Rendered greeter/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/greeter.css?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/greeter.js?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-31 20:03:53 -0300
