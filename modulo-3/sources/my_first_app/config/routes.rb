@@ -1,4 +1,5 @@
 MyFirstApp::Application.routes.draw do
+  get "recipes/search"
   get "translators/translate"
   get "translators/detect"
   get "translators/languages"
