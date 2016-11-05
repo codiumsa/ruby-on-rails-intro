@@ -1,8 +1,13 @@
 MyFirstApp::Application.routes.draw do
-  #get "greeter/hello"
+  get "translators/translate"
+  get "translators/detect"
+  get "translators/languages"
 
   get 'greeter/hello' => "greeter#hello"
   get 'greeter/goodbye'
+
+  root "translators#languages"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

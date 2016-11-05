@@ -1,0 +1,14 @@
+<h1>Idiomas en- <%= @target_language %></h1>
+
+<table border="1">
+  <tr>
+    <th>Language</th>
+    <th>Name</th>
+  </tr>
+  <% @languages['data']['languages'].each do |lang| %>
+    <tr class=<%= cycle('even', 'odd') %>>
+      <td><%= lang['name'] %></td>
+      <td><%= lang['language'] %></td>
+    </tr>
+  <% end %>
+</table>
