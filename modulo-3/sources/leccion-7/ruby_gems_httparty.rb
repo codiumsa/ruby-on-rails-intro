@@ -30,8 +30,8 @@ class RemoteGem
     response = get("/gems/#{name}.json")
     if response.success?
       self.new(response["name"], response["info"],
-        response["version"], response["authors"],
-        response["downloads"])
+               response["version"], response["authors"],
+               response["downloads"])
     else
       # this just raises the net/http response that was raised
       raise response.response

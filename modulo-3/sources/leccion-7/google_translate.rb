@@ -37,8 +37,7 @@ class GoogleTranslate
   end
 
   def self.languages(target)
-    @target = target
-    options = { query: {target: @target}}
+    options = { query: {target: target}}
     response = get("/languages", options)
     if response.success?
       response
@@ -49,15 +48,15 @@ class GoogleTranslate
 
 end
 
-puts "Testing GoogleTranslate API"
-google = GoogleTranslate.new("en", "es")
-trans = "This is a really good party!"
-response = google.translate(trans)
-puts "Tranducir: #{trans} \n\t---> #{response['data']['translations'][0]['translatedText']}"
+#puts "Testing GoogleTranslate API"
+#google = GoogleTranslate.new("en", "es")
+#trans = "This is a really good party!"
+#response = google.translate(trans)
+#puts "Tranducir: #{trans} \n\t---> #{response['data']['translations'][0]['translatedText']}"
 
-puts "RESPONSE: #{response}"
-puts "Detectando idioma"
-detection = google.detect(trans)
-puts "Detectado: #{detection}"
+#puts "RESPONSE: #{response}"
+#puts "Detectando idioma"
+#detection = google.detect(trans)
+#puts "Detectado: #{detection}"
 
-puts "A qué idiomas puedo traducir desde el frances: #{GoogleTranslate.languages('fr')}"
+puts "A qué idiomas puedo traducir desde el frances: #{GoogleTranslate.languages('ja')}"

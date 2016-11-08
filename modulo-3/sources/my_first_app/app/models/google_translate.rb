@@ -36,8 +36,7 @@ class GoogleTranslate
   end
 
   def self.languages(target)
-    @target = target
-    options = { query: {target: @target}}
+    options = { query: {target: target}}
     response = get("/languages", options)
     if response.success?
       response

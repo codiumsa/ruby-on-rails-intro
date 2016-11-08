@@ -12,4 +12,4 @@ class Recipe
   end
 end
 
-#puts Recipe.for('chicken')
+puts Recipe.for('chicken')
