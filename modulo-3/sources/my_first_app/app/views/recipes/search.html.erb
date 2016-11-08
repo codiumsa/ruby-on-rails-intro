@@ -1,7 +1,4 @@
 <h1>Buscando recetas con: <%= params[:text] %></h1>
-<% if @recipes.nil? %>
-  No se encontraron recetas.
-<%else%>
   <table border="1">
     <tr>
       <th>Imagen</th>
@@ -16,4 +13,3 @@
       </tr>
     <% end %>
   </table>
-<%end%>
