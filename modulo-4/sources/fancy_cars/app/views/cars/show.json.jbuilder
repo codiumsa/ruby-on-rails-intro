@@ -1,1 +1,1 @@
-json.extract! @car, :id, :make, :color, :year, :created_at, :updated_at
+json.extract! @car, :id, :model, :color, :year, :created_at, :updated_at
