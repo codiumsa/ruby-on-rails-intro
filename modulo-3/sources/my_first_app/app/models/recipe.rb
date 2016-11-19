@@ -1,3 +1,4 @@
+require 'HTTParty'
 class Recipe
   include HTTParty
 

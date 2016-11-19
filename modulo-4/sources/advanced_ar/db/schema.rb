@@ -11,24 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117003426) do
+ActiveRecord::Schema.define(version: 20161117044731) do
 
-  create_table "cars", force: true do |t|
-    t.string   "company"
-    t.string   "color"
-    t.integer  "year"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.decimal  "price",      precision: 10, scale: 2
-    t.date     "birth_date"
-    t.string   "model"
-  end
-
-  create_table "people", force: true do |t|
+  create_table "people", force: :cascade do |t|
     t.string   "first_name"
+    t.integer  "age"
     t.string   "last_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "login"
+    t.string   "pass"
   end
 
 end

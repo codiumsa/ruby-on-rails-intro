@@ -1,1 +1,6 @@
 api_key: 4c2e359020d616d50a5e070b6cfb0418
+
+gem install rspec
+gem install rspec-its
+gem install capybara
+gem install poltergeist

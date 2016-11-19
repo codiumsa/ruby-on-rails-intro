@@ -8,8 +8,8 @@
     <% @recipes.each do |recipe| %>
       <tr class=<%= cycle('even', 'odd') %>>
         <td><%= image_tag(recipe["image_url"])%></td>
-        <td><%= recipe['publisher'] %></td>
         <td><%= recipe['title'] %></td>
+        <td><%= recipe['social_ra'] %></td>
       </tr>
     <% end %>
   </table>
