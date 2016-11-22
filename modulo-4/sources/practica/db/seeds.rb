@@ -12,7 +12,7 @@ User.create! [
   { username: "Fiorina", password_digest: "Fiorina"},
   { username: "Trump", password_digest: "Trump"},
   { username: "Carson", password_digest: "Carson"},
-  { username: "Clinton", password_digest: "Clinton"},
+  { username: "Clinton", password_digest: "Clinton"}
 ]
 
 
@@ -43,10 +43,15 @@ User.find_by!(username: "Clinton").todo_lists.create! [
 ]
 
 TodoList.all.each do |td|
-  #puts "Seteando tareas para lista #{td.list_name}"
+  puts "Seteando tareas para lista #{td.list_name}"
   for i in 1..5 do
-      #puts "Seteando tarea #{i}"
       dateTrack = Date.today + rand(0..dateRange).day
-      td.todo_items.create![{ title: "Work #{i}", due_date: dateTrack, description: "Description #{i}", completed: false}]
+      puts "Seteando tarea #{i} #{dateTrack}"
+      #ti = TodoItem.new(title: "Work #{i}", due_date: dateTrack,
+      #description: "Description #{i}", completed: false)
+      #td.todo_items<<ti
+      #td.save!
+      td.todo_items.create!({ title: "Work #{i}", due_date: dateTrack,
+                              description: "Description #{i}", completed: false})
     end
   end
