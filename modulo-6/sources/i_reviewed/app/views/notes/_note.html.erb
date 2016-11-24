@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div class="bs-component">
+      <div class="well">
+        <%= content_tag :span, "#{note.title} (#{time_ago_in_words note.created_at} ago)"%>
+        <%= link_to "Delete Note", [@book, note], method: :delete%>
+        <%= simple_format note.note %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

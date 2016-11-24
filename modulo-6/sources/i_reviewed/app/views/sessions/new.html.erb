@@ -1,0 +1,25 @@
+
+<div class="bs-docs-section">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="page-header">
+        <h1 id="forms">Login</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="well bs-component">
+        <%= form_for(:reviewer, url: sessions_path, class: "form-horizontal") do |f| %>
+          <div class="form-group">
+            <div><%= f.label :name , class: "col-lg-2 control-label" %> <br/> <%= f.text_field :name , class: "form-control"%></div>
+            <div><%= f.label :password %> <br/> <%= f.password_field :password , class: "form-control"%></div>
+          </div>
+          <div class="actions"><%= f.submit "Login" , class: "btn btn-primary"%></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>  
+
