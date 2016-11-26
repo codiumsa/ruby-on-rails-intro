@@ -24,6 +24,12 @@
   </tbody>
 </table>
 
+
+<div class="bs-component">
+  <%# will_paginate @books%>
+  <%= will_paginate @books, renderer: BootstrapPagination::Rails %>
+</div>
+
 <br>
 
 <%= link_to 'New Book', new_book_path %>
