@@ -1,12 +1,6 @@
 class TodoItemsController < ApplicationController
-  before_action :set_todo_list, only: [:new, :show, :edit, :update, :destroy]
-  before_action :set_todo_item, only: [:show]
-
-  # GET /todo_items
-  # GET /todo_items.json
-  def index
-    @todo_items = TodoItem.all
-  end
+  before_action :set_todo_list, only: [:new, :show, :edit, :update, :create, :destroy]
+  before_action :set_todo_item, only: [:show, :edit]
 
   # GET /todo_items/1
   # GET /todo_items/1.json
@@ -29,7 +23,7 @@ class TodoItemsController < ApplicationController
 
     respond_to do |format|
       if @todo_item.save
-        format.html { redirect_to @todo_list, notice: 'Todo item was successfully created.' }
+        format.html { redirect_to [@todo_list, @todo_item], notice: 'Todo item was successfully created.' }
         format.json { render :show, status: :created, location: @todo_list }
       else
         format.html { render :new }
@@ -41,8 +35,9 @@ class TodoItemsController < ApplicationController
   # PATCH/PUT /todo_items/1
   # PATCH/PUT /todo_items/1.json
   def update
+    @todo_item = @todo_list.todo_items.find(params[:id])
     respond_to do |format|
-      if @todo_list.todo_items.update(todo_item_params)
+      if @todo_item.update(todo_item_params)
         format.html { redirect_to @todo_list, notice: 'Todo item was successfully updated.' }
         format.json { render :show, status: :ok, location: @todo_list }
       else

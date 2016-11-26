@@ -29,6 +29,7 @@
         <td><%= todo_item.description %></td>
         <td><%= todo_item.completed %></td>
         <td><%= link_to 'Show', [@todo_list, todo_item] %></td>
+        <td><%= link_to 'Edit', edit_todo_list_todo_item_path(@todo_list, todo_item) %></td>
         <td><%= link_to 'Destroy', [@todo_list, todo_item], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

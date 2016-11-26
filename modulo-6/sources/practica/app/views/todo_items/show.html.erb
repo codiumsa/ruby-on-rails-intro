@@ -20,4 +20,5 @@
   <%= @todo_item.completed %>
 </p>
 
-<%= link_to 'Back', todo_list_path(@todo_list)%>
+<%= link_to 'Back', @todo_list %>
+<%= link_to 'Edit', edit_todo_list_todo_item_path(@todo_list, @todo_item) %>
