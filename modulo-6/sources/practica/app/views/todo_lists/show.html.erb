@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>List name:</strong>
+  <%= @todo_list.list_name %>
+</p>
+
+<p>
+  <strong>List due date:</strong>
+  <%= @todo_list.list_due_date %>
+</p>
+
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<%= link_to 'Back', todo_lists_path %>
