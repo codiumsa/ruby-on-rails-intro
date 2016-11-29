@@ -21,6 +21,12 @@ users = User.create! [
   { username: "rich", password: "123abc" }
 ]
 
+User.all.each do |user|
+  user.create_profile!(first_name: user.username, last_name: user.username + "last")
+  user.save!
+end
+
+
 TodoList.all.each do |list|
   list.user = users.sample
   list.save!
